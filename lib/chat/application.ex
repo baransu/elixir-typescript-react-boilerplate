@@ -13,10 +13,9 @@ defmodule Chat.Application do
       ChatWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: Chat.PubSub},
+      {Chat.Manager, ["7654", "7655"]},
       # Start the Endpoint (http/https)
       ChatWeb.Endpoint
-      # Start a worker by calling: Chat.Worker.start_link(arg)
-      # {Chat.Worker, arg}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
